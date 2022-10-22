@@ -15,6 +15,10 @@
         img{
             width: 200px;
         }
+        table,tr, td, th{ /*Agregado de borde a la tabla y a las filas*/
+            border: 1px solid black;
+            border-collapse: collapse;/*Para que todos los bordes se me junten*/
+        }
     </style>
 </head>
 <body><!--Aquí el contenido que SE VA A MOSTRAR en nuestra página-->
@@ -97,6 +101,30 @@
             <p>Informacion extra</p>
         </aside>
         <iframe src="https//:youtube.com" frameborder="1" width="600" height="1200"></iframe>
+        <section>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Braian</td>
+                    <td>Mena</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Fulano</td>
+                    <td>Tal</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>Walter</td>
+                    <td>White</td>
+                    <td>52 </td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer>
         &copy;Copyright 2022 BM  &alpha;
