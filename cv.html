@@ -7,11 +7,15 @@
     <meta name="author" content="Braian Mena"> <!--Agrego el autor del archivo html-->
     <link rel="shortcut icon" href="./assets/yo.jpeg" type="image/x-icon">
     <title>Brayano</title>
+    <link rel="stylesheet" href="./estilos/cv_estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Braian Alexander MENA</h1>
-        <nav> <!--Define el sector de navegacion de la pagina-->
+        <nav id="header__redes"> <!--Define el sector de navegacion de la pagina-->
             <h2>Redes Sociales:</h2>
             <ol>
                 <li>
@@ -27,16 +31,16 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="presentacion">
+            <img src="./assets/FotoCV.jpeg" alt="">
             <h2>PRESENTACION</h2>
             <article>
-                <img src="./assets/FotoCV.jpeg" alt="">
                 <p>
                     Me considero una persona responsable, ordenada y con muchas ganas de aprender. Buscando sumar experiencia y conocimientos a mi primera experiencia laboral.
                 </p>
             </article>
         </section>
-        <section>
+        <section class="resumen">
             <h2>RESUMEN</h2>
             <p>
                 Estudiante de cuarto año de la carrera Ingeniería en Computación de la FACETUNT.
@@ -45,7 +49,7 @@
                 Me definen 3 palabras. Aprendizaje, trabajo y disciplina. Me encanta aprender en cada oportunidad que se presenta, trabajar en ello y tener la consciencia de que la puesta en práctica es la mejor compañera de la teoría.
             </p>
         </section>
-        <section>
+        <section class="educacion">
             <h2>EDUCACIÓN</h2>
             <article>
                 <h3>ESTUDIOS</h3>
@@ -89,7 +93,7 @@
                 </ul>
             </article>
         </section>
-        <section>
+        <section class="otrosDatos">
             <h2>OTROS DATOS</h2>
             <article>
                 <h3>IDIOMAS</h3>
@@ -120,7 +124,7 @@
                 <p>En mi tiempo libre me gusta practicar deportes o aprender de temas que sirvan como complemento a mis estudios o satisfagan alguna que otra inquietud de cualquier ámbito que desconozca.</p>
             </article>
         </section>
-        <section>
+        <section class="contacto">
             <h2>CONTACTO</h2>
             <ul>
                 <li><span>✉:</span> braianmena@gmail.com</li>
@@ -129,6 +133,6 @@
             </ul>
         </section>
     </main>
-    <footer>&copy;Copyright 2022 BM  &alpha;</footer>
+    <footer>&copy;Copyright BM 2022 &alpha;</footer>
 </body>
 </html>

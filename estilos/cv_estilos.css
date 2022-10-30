@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    padding: 1%;
+    border: 15px;
+    background-color: darkcyan;
+}
+h1{
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    text-shadow: 10px 20px 10px green;
+}
+h2{
+    font-size: 30px;
+    color: white;
+    text-shadow: 5px 10px 10px gray;
+    text-align: center;
+}
+h3{
+    font-size: 26px;
+    text-shadow: 5px 10px 10px rgba(0, 81, 255, 0.623);;
+}
+header{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(3, 102, 81, 0.685);
+    border-radius: 2%;
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+}
+p{
+    font-size: 22px;
+    text-align: justify;
+    font-weight:bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    text-align: center;
+    background-color: rgb(43, 160, 255);
+    font-weight: bolder;
+}
+#header__redes{
+    font-family: 'Times New Roman', Times, serif;
+    color:rgba(255, 255, 255, 0.89);
+    text-align: right;
+}
+.contacto{
+    text-align: justify;
+    text-decoration: none; /*aqui deberia quitar el subrayado-> no lo hace*/
+}
+span{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+li, td, th{
+    font-size: 20px;
+    font-weight: 500;
+}
