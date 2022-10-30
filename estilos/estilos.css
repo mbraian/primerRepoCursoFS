@@ -1,0 +1,64 @@
+h3{
+    background-color: antiquewhite;
+    font-size: 90px;
+}
+.primero{
+    background-color: black;
+    color: aqua;
+}
+.segundo{
+    background-color: crimson;
+    color: antiquewhite;
+}
+#tercertitulo {
+    background-color: blueviolet;
+    color: bisque;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a[href$=".com"]{/* signo $ indica que lo que sigue es lo que hay en comun entre los anchor*/
+    color: darkorange;
+}
+.caja{
+    background-color: darkblue;
+    width: 50%; /* Segun el porcentaje del contenedor(el padre, main)*/
+    height: 200px; /* estos se mantendrian 'fijos*/
+    border: 10px solid black;
+    padding: 20px 50px 40px 90px;
+    margin: 80px 10px;
+}
+/*
+.caja__interna{
+    background-color: burlywood;
+    width: 70%; /*70% de caja, contenedor padre*/
+    /*height: 70%;
+}*/
+.caja__interna{
+    background-color: burlywood;
+    width: 70vw; /*70% de la vista de pagina*/
+    height: 70vh;
+}
+
+.caja__doble{
+    font-size: 2em;
+    color: chartreuse;
+    /*opacity: 0.2;*/
+    font-family: 'Shalimar', cursive;/*aparecen varios, en caso de no tener compatibilidad con las fuentes*/
+    font-weight: 700;/*Para hacer negritas*/
+    line-height: 20px;/*puede modificar la altura de la caja*/
+    /*overflow: hidden; /*cuando algo se excede de su contenedor, no se muestra*/
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(40, 184, 152, 0.568);
+}
+p{
+    font-size: 20px; /*lo anterior permanece igual, ya que depende del valor por defecto*/
+}
+body{
+    font-size: 40px;/*1em=40px*/
+}
+a{
+    text-decoration: none; /*Sacamos el subrayado por defecto de los enlaces*/
+}
