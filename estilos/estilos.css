@@ -15,6 +15,8 @@ h3{
     color: bisque;
 }
 *{
+    box-sizing: border-box;
+    /*box-sizing: content-box; ESTE es el que se usa por default*/
     padding: 0;
     margin: 0;
 }
@@ -23,11 +25,15 @@ a[href$=".com"]{/* signo $ indica que lo que sigue es lo que hay en comun entre 
 }
 .caja{
     background-color: darkblue;
-    width: 50%; /* Segun el porcentaje del contenedor(el padre, main)*/
+    width: 200px; /* Si se usa '%', es segun el porcentaje del contenedor(el padre, main)*/
     height: 200px; /* estos se mantendrian 'fijos*/
-    border: 10px solid black;
+    border: 10px solid rgba(233, 32, 32, 0.925); /* pude ser: solid, dotted, dashed, etc*/
     padding: 20px 50px 40px 90px;
     margin: 80px 10px;
+    /*box-sizing: border-box; /*con esto, se incluye a border y padding a todo el alto y ancho del contenedor. Se lo suele especificar en el selector global*/
+    border-radius: 50%;
+    box-shadow: 20px 20px 30px blue;/*comportamiento similar al text shadow*/
+    opacity: 0.2;/*se aplica sobre TODO*/
 }
 /*
 .caja__interna{
