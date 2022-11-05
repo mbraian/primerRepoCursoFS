@@ -1,0 +1,166 @@
+h3{
+    background-color: antiquewhite;
+    font-size: 90px;
+}
+.primero{
+    background-color: black;
+    color: aqua;
+}
+.segundo{
+    background-color: crimson;
+    color: antiquewhite;
+}
+#tercertitulo {
+    background-color: blueviolet;
+    color: bisque;
+}
+*{
+    box-sizing: border-box;
+    /*box-sizing: content-box; ESTE es el que se usa por default*/
+    padding: 0;
+    margin: 0;
+}
+a[href$=".com"]{/* signo $ indica que lo que sigue es lo que hay en comun entre los anchor*/
+    color: darkorange;
+}
+.caja{
+    background-color: rgb(29, 29, 236); /*si le agrego un 3er parametro, este sera la opacidad solo del COLOR de fondo*/
+    width: 120px; /* Si se usa '%', es segun el porcentaje del contenedor(el padre, main)*/
+    /*height: 200px; /* estos se mantendrian 'fijos*/
+    border: 10px solid rgba(233, 32, 32, 0.925); /* pude ser: solid, dotted, dashed, etc*/
+    padding: 20px;
+    /*margin: 30px 20px 10px 25px;*/
+    /*box-sizing: border-box; /*con esto, se incluye a border y padding a todo el alto y ancho del contenedor. Se lo suele especificar en el selector global*/
+    box-shadow: 20px 20px 30px blue;/*comportamiento similar al text shadow*/
+    opacity: 0.9;/*se aplica sobre TODO*/
+    position: relative;
+    height: 50px;/*para explicacion align-content*/
+}
+.caja:hover{
+    transform: scale(110%);
+    box-shadow: 20px 20px 30px rgb(229, 57, 235);
+}
+
+/*
+.caja__interna{
+    background-color: burlywood;
+    width: 70%; /*70% de caja, contenedor padre*/
+    /*height: 70%;
+}*/
+.caja__interna{
+    background-color: burlywood;
+    width: 70vw; /*70% de la vista de pagina*/
+    height: 70vh;
+}
+
+.caja__doble{
+    font-size: 1em;
+    color: chartreuse;
+    /*opacity: 0.2;*/
+    font-family: 'Shalimar', cursive;/*aparecen varios, en caso de no tener compatibilidad con las fuentes*/
+    font-weight: 700;/*Para hacer negritas*/
+    line-height: 50px;/*puede modificar la altura de la caja*/
+    /*overflow: hidden; /*cuando algo se excede de su contenedor, no se muestra*/
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(40, 184, 152, 0.568);
+}
+p{
+    font-size: 20px; /*lo anterior permanece igual, ya que depende del valor por defecto*/
+}
+body{
+    font-size: 20px;/*1em=40px*/
+}
+a{
+    text-decoration: none; /*Sacamos el subrayado por defecto de los enlaces*/
+    padding: 30px;
+    font-size: 32px;
+    color: white;
+}
+.caja1{
+    float:left;
+    /*display: none; Con esto oculto al elemento*/
+}
+.caja2{ /*la caja 1 saldrá de su flujo y todo lo que estaba por debajo sube y ocupa el lugar de caja1*/
+    float:left;
+}
+
+
+h2 ~ p{ /*Esto significa: red para los p que sean directamente hermanos de h2*/
+    background-color: red;
+}
+h2 + p{ /*Esto significa: red para los p que sean directamente hermanos de h2*/
+    background-color: yellow;
+} 
+.boeri > p{ /*COMBINADOR DE HIJO DIRECTO*/
+    background-color: aquamarine;
+}
+.boeri p{ /*COMBINADOR DE DESCENDIENTES*/
+    background-color: rgb(127, 255, 127);
+}
+a:visited{
+    color: blue;
+}
+a:active{
+    color: rgb(0, 255, 221);
+}
+input:disabled{
+    background-color: blueviolet;
+}
+
+/* Clase 4-parte:Posicionamiento: 45' 
+.caja1{
+    position:relative;
+    top: 50px;
+}
+.caja2{
+    position: absolute;
+    top: 0;
+}*/
+/*.caja3{
+    position: fixed;
+    top:0px;
+}
+.caja3{
+    position: sticky;
+    top:50px;
+    left: 250px;
+}
+
+.caja1::first-line{
+    color: aqua;
+}*/
+
+/*.flexCaja{ 
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    /*padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+    /*align-items: baseline; /*alinea en cuanto al texto, para que queden todos al mismo nivel*/
+    /*height: 600px;
+}
+.caja1{
+    width: 120px;
+}
+.caja2{
+    width: 200px;
+    font-size: 40px;
+}
+.caja3{
+    width: 300px;
+}
+.caja4{
+    width: 240px;
+}
+*/
+
+.gridCaja{
+    display: grid;
+    background-color: cornflowerblue;
+    /*grid-template-rows: 100px 100px 100px; /*La cantidad de parametros representa a una fila*/
+    grid-template-rows: 100px 100px 1fr;/*Mismo efecto que el de arriba*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
