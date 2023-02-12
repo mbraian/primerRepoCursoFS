@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="./scripts/cv.js"></script>
 </head>
 <body>
     <header>
@@ -126,13 +127,27 @@
                 <p>En mi tiempo libre me gusta practicar deportes o aprender de temas que sirvan como complemento a mis estudios o satisfagan alguna que otra inquietud de cualquier ámbito que desconozca.</p>
             </article>
         </section>
-        <section class="contacto">
-            <h2>CONTACTO</h2>
-            <ul>
-                <li><span>✉:</span> braianmena@gmail.com</li>
-                <li><span>✆:</span> +54 3838 402648</li>
-                <li><span>&#128506:</span> Pasaje Cabildo 1633, San Miguel de Tucumán.</li>
-            </ul>
+        <section class="contactame">
+            <div class="mensaje__contactame">CONTÁCTAME:</div>
+            <div class="contactame__input grupo3">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="contactame__input__form" id="apellido" placeholder="Ingrese aquí su apellido">
+            </div>
+            <div class="contactame__input grupo3">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="contactame__input__form" id="nombre" placeholder="Ingrese aquí su nombre">
+            </div>
+            <div class="contactame__input grupo3">
+                <label for="telefono">Telefono</label>
+                <input type="number" class="contactame__input__form" id="telefono" placeholder="Ingrese aquí su numero">
+            </div>
+            <div class="contactame__input">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="contactame__input__form" id="mensaje" aria-label="With textarea"></textarea>
+            </div>
+            <div class="contactame__submit">
+                <button class="contactame__submit btn" type="submit" onclick="datosContacto()">Enviar</button>
+            </div>
         </section>
     </main>
     <footer>&copy;Copyright BM 2022 &alpha;</footer>
